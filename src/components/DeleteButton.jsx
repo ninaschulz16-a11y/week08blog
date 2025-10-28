@@ -6,7 +6,7 @@ export default function DeleteButton({ commentId, handleDelete }) {
       style={{ marginLeft: "10px" }}
       onClick={() => handleDelete(commentId)}
     >
-      Delete
+      ❌
     </button>
   );
 }

@@ -12,7 +12,7 @@ export default async function PostPage({ params }) {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>{post.named}</h1>
+      <h1><strong>{post.named}</strong></h1>
 
       {post.img_url && (
         <img
@@ -28,8 +28,9 @@ export default async function PostPage({ params }) {
       <hr />
       <h2>Comments</h2>
 
-    
+
       <AddComment id={id} />
+
       <Comments id={id} />
     </div>
   );
